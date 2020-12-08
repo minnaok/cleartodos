@@ -23,5 +23,5 @@ test('clear todos', () => {
     const date= getByPlaceholderText('Date');
     fireEvent.change(date, { target:{ value:'29.11.2019' } })
     const button= getByText('Clear');fireEvent.click(button);
-    expect(container).not.toHaveTextContent('');
+    expect(container).not.toHaveTextContent('Go to coffee');
     })
